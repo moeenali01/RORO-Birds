@@ -2,14 +2,10 @@
 pragma solidity ^0.8.13;
 
 import {Test, console} from "forge-std/Test.sol";
-import {Spacebar} from "../src/roro.sol";
+import {SpaceBar} from "../src/roro.sol";
 
 contract RoroTest is Test {
-    Spacebar public roro;
+    SpaceBar public roro;
 
-    function setUp() public {
-        roro = new Spacebar();
-    }
-
-    
+    function testInitialSetup() public view {}
 }

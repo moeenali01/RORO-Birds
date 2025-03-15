@@ -2,17 +2,17 @@
 pragma solidity ^0.8.13;
 
 import {Script, console} from "forge-std/Script.sol";
-import {Counter} from "../src/Counter.sol";
+import {SpaceBar} from "../src/roro.sol";
 
-contract CounterScript is Script {
-    Counter public counter;
+contract SpacebarScript is Script {
+    SpaceBar public roro;
 
     function setUp() public {}
 
     function run() public {
         vm.startBroadcast();
 
-        counter = new Counter();
+        roro = new SpaceBar(msg.sender);
 
         vm.stopBroadcast();
     }
